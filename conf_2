@@ -1,0 +1,51 @@
+# l1 data cache config, i.e., {<config>|none}
+-cache:dl1             dl1:128:32:4:l 
+
+# l1 data cache hit latency (in cycles)
+-cache:dl1lat                     1 
+
+# l2 data cache config, i.e., {<config>|none}
+-cache:dl2             ul2:1024:64:4:l 
+
+# l2 data cache hit latency (in cycles)
+-cache:dl2lat                     6 
+
+# l3 data cache config, i.e., {<config>|none}
+-cache:dl3             none
+
+# l3 data cache hit latency (in cycles)
+-cache:dl3lat                    18 
+
+# l4 data cache config, i.e., {<config>|none}
+-cache:dl4             none
+
+# l4 data cache hit latency (in cycles)
+-cache:dl4lat                     36
+
+# l5 data cache config, i.e., {<config>|none}
+-cache:dl5             none
+
+# l5 data cache hit latency (in cycles)
+-cache:dl5lat                    72 
+
+# l1 inst cache config, i.e., {<config>|dl1|dl2|dl3|none}
+-cache:il1             il1:512:32:1:l 
+
+# l1 instruction cache hit latency (in cycles)
+-cache:il1lat                     1 
+
+# l2 instruction cache config, i.e., {<config>|dl2|dl3|none}
+-cache:il2             dl2 
+
+# l3 instruction cache config, i.e., {<config>|dl3|none}
+-cache:il3             none  
+
+# l4 instruction cache config, i.e., {<config>|dl4|none}
+-cache:il4             none  
+
+# l5 instruction cache config, i.e., {<config>|dl5|none}
+-cache:il5             none  
+
+#memory latency
+-mem:lat 200 2
+
